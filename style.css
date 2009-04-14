@@ -1,0 +1,256 @@
+/*
+Theme Name: Axente Sever
+Theme URI: http://axente.ro/
+Description: A WordPress theme based on Thematic framework. Axente Sever's child theme. Ported from toendaCMS apart7, inspired from CSS Zen Garden submission 085 - 'Oceans Apart', by Ryan Sims, http://www.justwatchthesky.com
+Version: 0.1
+Author: Stas Sushkov
+Author URI: http://stas.nerd.ro/
+Template: thematic
+. 
+This work, like WordPress, is released under GNU General Public License, version 2 (GPL). 
+http://www.gnu.org/licenses/old-licenses/gpl-2.0.html 
+. 
+*/
+
+/* Reset browser defaults */ 
+@import url('../thematic/library/styles/reset.css');  
+
+/* Apply basic typography styles */  
+@import url('../thematic/library/styles/typography.css');  
+
+/* Apply a basic layout */  
+@import url('../thematic/library/layouts/2c-l-fixed.css');  
+
+/* Apply basic image styles */  
+@import url('../thematic/library/styles/images.css');  
+
+/* Apply default theme styles and colors */  
+@import url('../thematic/library/styles/default.css');  
+
+/* Prepare theme for plugins */  
+@import url('../thematic/library/styles/plugins.css');  
+
+/* Real stuff starts here */
+
+/* Layout */
+
+html {
+	background-color: #E8E0D5;
+}
+
+body {
+	background: transparent url(img/bckg.gif) repeat-y top center;
+}
+
+#wrapper {
+	width: 705px;
+	margin: 0 auto;
+	overflow: hidden;
+	border-top: 11px solid #B7B6B6;
+}
+
+#header, #branding, #main, #footer {
+	width: 705px;
+}
+
+#branding {
+	padding: 110px 0 150px;
+}
+
+#header {
+	background-color: #B7B6B6;
+	background: transparent url(img/banner.jpg) no-repeat top center;
+	border-bottom: 11px solid #B7B6B6;
+}
+
+#main {
+	padding-top: 0px;
+}
+
+#container {
+	width: 705px;
+}
+
+.main-aside {
+	width: 187px;
+}
+
+.main-aside ul {
+	padding: 0px;
+}
+
+#content {
+	margin: 0 0 0 200px;
+	width: 500px;
+	padding: 0px 5px;
+}
+
+.hentry {
+	width: 480px;
+	margin-top: 10px;
+}
+
+#footer {
+	border-top: 11px solid #B7B6B6;
+	border-bottom: 11px solid #B7B6B6;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+#siteinfo {
+	background-color: #384A5F;
+	width: 705px;
+	padding: 2px;
+}
+
+#access {
+	display: none;
+}
+
+#primary {
+	border: none;
+	padding: 0px;
+	margin-bottom: 0;
+}
+
+.paged #nav-above {
+	display: none;
+}
+
+/* Typografy */
+
+body {
+	color: #4a4a4a;
+	font-family: Georgia, serif;
+	font-size: 12px;
+}
+
+a, a:link, a:active, a:hover {
+	color: #384A5F;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#content a, #content a:link, #content a:active, #content a:hover {
+	color: #384A5F;
+}
+
+#blog-title {
+	font-family: Georgia, serif;
+	font-size: 23px;
+	padding-left: 5px;
+}
+
+#blog-title span {
+	border-bottom: 1px solid #4a4a4a;
+}
+
+#blog-title span a, #blog-title span a:hover  {
+	color: #4a4a4a;
+	font-weight: normal;
+}
+
+#blog-description {
+	padding-left: 5px;
+	margin-top: -2px;
+	color: #444;
+}
+
+.entry-title {
+	font-family: Georgia, serif;
+	font-weight: normal;
+	font-size: 18px;
+	padding-bottom: 2px;
+}
+
+.entry-utility {
+	font-size: 10px;
+	margin-bottom: 0;
+	text-align: right;
+	border-top: 1px solid #999;
+}
+
+.widgettitle {
+	color: #384A5F;
+	background: transparent url(img/menutitle.gif) repeat-x top center;
+	height: 30px;
+}
+
+.aside ul {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.aside h3 {
+	line-height: 30px;
+	padding-left: 5px;
+}
+
+.aside ul ul {
+	margin-left: 0;
+	margin-bottom: 0;
+}
+
+.aside ul ul li a {
+	text-decoration: none;
+	color: #4a4a4a;
+	font-size: 12px;
+}
+
+.aside ul ul li a:hover {
+	text-decoration: none;
+	color: #384A5F;
+}
+
+.aside ul ul li:hover {
+	background: transparent url(img/menubutton_over.gif) repeat-x top left;
+}
+
+.aside ul ul li {
+	list-style: none;
+	padding-left: 5px;
+	background: transparent url(img/menubutton.gif) repeat-x bottom center;
+	height: 30px;
+	line-height: 30px;
+}
+
+.entry-meta {
+	font-size: 10px;
+}
+
+.entry-content h2, .entry-content h3 {
+	font-size: 14px;
+	padding: 2px 0;
+}
+
+.entry-content h2 {
+	font-size: 16px;
+}
+
+#comments, #respond {
+	padding: 0px;
+	margin-bottom: 0;
+	width: 480px;
+}
+
+#respond h3 {
+	font-family: Georgia, serif;
+}
+
+#nav-below {
+	width: 480px;
+	padding: 20px 0 10px;
+}
+
+#siteinfo, #siteinfo a, #siteinfo a:hover {
+	color: #eee;
+	text-decoration: none;
+	font-size: 10px;
+}
+
+#siteinfo a:hover {
+	text-decoration: underline;
+}
